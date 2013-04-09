@@ -1,16 +1,14 @@
-# Ryan Bates Dot Files
+# Earle Clubb's Dot Files
 
-These are config files to set up a system the way I like it. It now uses [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh). If you would like to see my old, custom Bash and ZSH config, check out [this branch](https://github.com/ryanb/dotfiles/tree/custom-bash-zsh)
-
-I am running on Mac OS X, but it will likely work on Linux as well.
+These are config files to set up a system the way I like it. It uses [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh). If you would like to see my old, custom Bash and ZSH config, check out [this branch](https://github.com/ryanb/dotfiles/tree/custom-bash-zsh)
 
 
 ## Installation
 
-Run the following commands in your terminal. It will prompt you before it does anything destructive. Check out the [Rakefile](https://github.com/ryanb/dotfiles/blob/custom-bash-zsh/Rakefile) to see exactly what it does.
+Run the following commands in your terminal. It will prompt you before it does anything destructive. Check out the [Rakefile](https://github.com/eclubb/dotfiles/blob/master/Rakefile) to see exactly what it does.
 
 ```terminal
-git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+git clone git://github.com/eclubb/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 rake install
 ```
