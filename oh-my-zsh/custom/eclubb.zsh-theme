@@ -7,7 +7,7 @@ fi
 PATH_PROMPT=%{$fg[cyan]%}%~
 END_PROMPT=%(?.%{$fg[green]%}.%{$fg[red]%})%B$%b%{$reset_color%}
 
-PROMPT=$'$SSH_PROMPT$PATH_PROMPT %{$reset_color%}$(git_prompt_info)$POST_GIT_PROMPT$END_PROMPT '
+PROMPT=$'$SSH_PROMPT$PATH_PROMPT %{$reset_color%}$(git_prompt_info)$END_PROMPT '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}["
 ZSH_THEME_GIT_PROMPT_SUFFIX="]%{$reset_color%} "
