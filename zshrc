@@ -9,4 +9,8 @@ CASE_SENSITIVE="true"
 
 source $ZSH/oh-my-zsh.sh
 
+if [ -f /usr/local/share/chruby/auto.sh ] ; then
+  source /usr/local/share/chruby/auto.sh
+fi
+
 export EDITOR='vim'
