@@ -20,21 +20,9 @@ Feel free to customize the .zshrc file to match your preference.
 
 ## Features
 
-Many of the following features are added through the "rbates" Oh My ZSH plugin.
+Many of the following features are added through the "eclubb" Oh My ZSH plugin.
 
-I normally place all of my coding projects in ~/code, so this directory can easily be accessed (and tab completed) with the "c" command.
-
-```terminal
-c railsca<tab>
-```
-
-There is also an "h" command which behaves similar, but acts on the home path.
-
-```terminal
-h doc<tab>
-```
-
-Tab completion is also added to rake and cap commands:
+Tab completion is added to rake and cap commands:
 
 ```
 rake db:mi<tab>
@@ -45,21 +33,19 @@ To speed things up, the results are cached in local .rake_tasks~ and .cap_tasks~
 
 If you're using git, you'll notice the current branch name shows up in the prompt while in a git repository.
 
-There are several features enabled in Ruby's irb including history and completion. Many convenience methods are added as well such as "ri" which can be used to get inline documentation in IRB. See irbrc file for details.
-
 
 ## Uninstall
 
 To remove the dotfile configs, run the following commands. Be certain to double check the contents of the files before removing so you don't lose custom settings.
 
 ```
-unlink ~/.bin
-unlink ~/.gitignore
+unlink ~/.colordiffrc
 unlink ~/.gemrc
-unlink ~/.gvimrc
-unlink ~/.irbrc
+unlink ~/.gitignore
+unlink ~/.tmux.conf
 unlink ~/.vim
 unlink ~/.vimrc
+unlink ~/.zshenv
 rm ~/.zshrc # careful here
 rm ~/.gitconfig
 rm -rf ~/.dotfiles
