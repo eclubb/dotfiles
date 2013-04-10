@@ -5,7 +5,7 @@ else
 fi
 
 PATH_PROMPT=%{$fg[cyan]%}%~
-END_PROMPT=%(?.%{$fg[green]%}.%{$fg[red]%})%B$%b%{$reset_color%}
+END_PROMPT=%(?.%{$fg[green]%}.%{$fg[red]%})$%{$reset_color%}
 
 PROMPT=$'$SSH_PROMPT$PATH_PROMPT %{$reset_color%}$(git_prompt_info)$END_PROMPT '
 
