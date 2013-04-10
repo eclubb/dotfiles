@@ -5,7 +5,8 @@ ZSH_THEME="eclubb"
 DISABLE_AUTO_UPDATE="true"
 CASE_SENSITIVE="true"
 
-#plugins=(git bundler gem rbates)
+#plugins=(git bundler gem eclubb)
+plugins=(eclubb)
 
 source $ZSH/oh-my-zsh.sh
 
