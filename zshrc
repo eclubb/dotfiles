@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="rbates"
+ZSH_THEME="eclubb"
 
 DISABLE_AUTO_UPDATE="true"
 CASE_SENSITIVE="true"
