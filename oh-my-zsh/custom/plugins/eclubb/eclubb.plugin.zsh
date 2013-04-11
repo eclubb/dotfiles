@@ -8,6 +8,11 @@ cdiff() {
 unsetopt correct_all
 
 
+# History search keybindings
+bindkey '^P' history-beginning-search-backward
+bindkey '^N' history-beginning-search-forward
+
+
 ### Aliases ###
 # general
 alias retag='ctags -R --exclude=.svn --exclude=.git --exclude=log *'
