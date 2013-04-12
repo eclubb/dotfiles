@@ -275,6 +275,7 @@ set backspace=indent,eol,start    " allow backspacing over everything in insert 
 set number                        " show line numbers
 set vb t_vb=                      " turn off bell
 set hidden                        " hide buffers when not displayed
+set updatecount=0                 " disable swap files
 
 
 " Invisible Characters ********************************************************
