@@ -35,9 +35,9 @@ set nocompatible
 " All of the plugins are installed with Vundle from this file.
 source ~/.vim/vundle.vim
 
+" All hotkeys, not dependent on plugins, are bound here.
+source ~/.vim/bindings.vim
 
-" Leader **********************************************************************
-let mapleader=","
 
 
 " Tabs ************************************************************************
@@ -216,27 +216,6 @@ set nowrap       " dont wrap lines
 set linebreak    " wrap lines at convenient points
 
 
-" Mappings ********************************************************************
-" Professor VIM says '87% of users prefer jj over esc', jj abrams disagrees
-imap jj <Esc>
-imap uu _
-imap hh =>
-imap aa @
-
-map <leader>s :%s/\s\+$//<CR>    " removes trailing spaces
-nmap <leader>tp :set paste!<CR>  " toggle paste mode
-
-" Paste lines from unnamed register and fix indentation
-nmap <leader>p pV`]=
-nmap <leader>P PV`]=
-
-" Make <c-l> clear the highlight as well as redraw
-nnoremap <C-L> :nohls<CR><C-L>
-inoremap <C-L> <C-O>:nohls<CR>
-
-nnoremap gf <C-W>gf
-noremap Q gq     " map Q to something useful
-nnoremap Y y$    " make Y consistent with C and D
 
 " Visual search mappings
 function! s:VSetSearch()
@@ -260,8 +239,6 @@ autocmd BufRead,BufNewFile Guardfile set filetype=ruby
 autocmd FileType * call Tabstyle_auto()
 
 " Insert New Line **************************************************************
-map <S-Enter> O<ESC>    " awesome, inserts new line without going into insert mode
-map <Enter> o<ESC>
 set formatoptions-=r    " don't continue comments when pushing enter
 set formatoptions-=o    " don't continue comments when pushing o/O
 
@@ -283,12 +260,10 @@ set updatecount=0                 " disable swap files
 " Invisible Characters ********************************************************
 set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<
 set nolist
-:noremap <leader>i :set list!<CR>    " toggle invisible chars
 
 
 " Spell Check *****************************************************************
 set spelllang=en_us
-nmap <silent> <leader>z :set spell!<CR>    " toggle spell check
 
 
 " Mouse ***********************************************************************
@@ -296,17 +271,6 @@ set mouse=a    " enable the mouse
 set ttymouse=xterm2
 "behave xterm
 "set selectmode=mouse
-
-
-" Cursor Movement *************************************************************
-" Make cursor move by visual lines instead of file lines (when wrapping)
-map <up> gk
-map k gk
-imap <up> <C-o>gk
-map <down> gj
-map j gj
-imap <down> <C-o>gj
-map E ge
 
 
 " Omni Completion *************************************************************
