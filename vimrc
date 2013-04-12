@@ -343,7 +343,7 @@ function! SetCursorPosition()
 endfunction
 
 " Automatically reload .vimrc on save.
-autocmd BufWritePost ~/.vimrc source %
+autocmd BufWritePost vimrc source $MYVIMRC
 
 " Define :HighlightExcessColumns command to highlight the offending parts of
 " lines that are "too long", where "too long" is defined by &textwidth or an
