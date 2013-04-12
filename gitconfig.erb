@@ -6,7 +6,6 @@
 	ci = commit
 	st = status
 	br = branch
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --relative-date --decorate
 [color]
 	ui = auto
 [color "diff"]
@@ -16,11 +15,12 @@
 	editor = vim
 [apply]
 	whitespace = nowarn
-[format]
-	pretty = %C(yellow)%h%Creset %s %C(cyan)(%an, %cr)%Creset
 [git-up "rebase"]
 	arguments = --preserve-merges
 [merge]
 	ff = false
 [push]
 	default = simple
+[pretty]
+	normal = %C(yellow)%h%Creset %s %C(cyan)(%an, %cr)%Creset
+	decorate = %C(yellow)%h%C(yellow)%d%Creset %s %C(cyan)(%an, %cr)%Creset
