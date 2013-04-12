@@ -76,6 +76,8 @@ compdef _git gpull=git-pull
 alias gpullr='git pull --rebase'
 compdef _git gpullr=git-fetch
 
+alias gup='git up'
+
 alias gpush='git push'
 compdef _git gpush=git-push
 alias gpoat='git push origin --all && git push origin --tags'
