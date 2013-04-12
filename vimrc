@@ -9,6 +9,7 @@
 " |                                                                           |
 " |   ,s = strip trailing whitespace                                          |
 " |   ,i = toggle invisibles                                                  |
+" |   ,z = toggle spell check                                                 |
 " |                                                                           |
 " |   ,h = new horizontal window                                              |
 " |   ,v = new vertical window                                                |
@@ -276,10 +277,15 @@ set vb t_vb=                      " turn off bell
 set hidden                        " hide buffers when not displayed
 
 
-" Invisible Characters *********************************************************
+" Invisible Characters ********************************************************
 set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<
 set nolist
 :noremap ,i :set list!<CR>    " toggle invisible chars
+
+
+" Spell Check *****************************************************************
+set spelllang=en_us
+nmap <silent> <leader>z :set spell!<CR>    " toggle spell check
 
 
 " Mouse ***********************************************************************
