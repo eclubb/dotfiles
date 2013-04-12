@@ -38,6 +38,8 @@ source ~/.vim/vundle.vim
 " All hotkeys, not dependent on plugins, are bound here.
 source ~/.vim/bindings.vim
 
+" Small custom functions.
+source ~/.vim/functions.vim
 
 
 " Tabs ************************************************************************
@@ -216,18 +218,6 @@ set nowrap       " dont wrap lines
 set linebreak    " wrap lines at convenient points
 
 
-
-" Visual search mappings
-function! s:VSetSearch()
-    let temp = @@
-    norm! gvy
-    let @/ = '\V' . substitute(escape(@@, '\'), '\n', '\\n', 'g')
-    let @@ = temp
-endfunction
-vnoremap * :<C-u>call <SID>VSetSearch()<CR>//<CR>
-vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>
-
-
 " File Stuff ******************************************************************
 filetype plugin indent on
 
@@ -297,33 +287,8 @@ set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 
 
-" Misc Functions **************************************************************
-" Jump to last cursor position when opening a file
-" Don't do it when writing a commit log entry
-autocmd BufReadPost * call SetCursorPosition()
-function! SetCursorPosition()
-    if &filetype !~ 'commit\c'
-        if line("'\"") > 0 && line("'\"") <= line("$")
-            exe "normal g`\""
-        endif
-    end
-endfunction
-
 " Automatically reload .vimrc on save.
 autocmd BufWritePost vimrc source $MYVIMRC
-
-" Define :HighlightExcessColumns command to highlight the offending parts of
-" lines that are "too long", where "too long" is defined by &textwidth or an
-" arg passed to the command
-command! -nargs=? HighlightExcessColumns call s:HighlightExcessColumns('<args>')
-function! s:HighlightExcessColumns(width)
-    let targetWidth = a:width != '' ? a:width : &textwidth
-    if targetWidth > 0
-        exec 'match Todo /\%>' . (targetWidth+1) . 'v/'
-    else
-        echomsg "HighlightExcessColumns: set a &textwidth, or pass one in"
-    endif
-endfunction
 
 
 " -----------------------------------------------------------------------------
