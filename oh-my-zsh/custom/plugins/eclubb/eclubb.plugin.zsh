@@ -110,9 +110,12 @@ alias gsb='git show-branch'
 compdef _git gsb=git-show-branch
 
 # gem
-alias sgi='sudo gem install'
-alias sgup='sudo gem update'
-alias sgun='sudo gem uninstall'
+alias gemi='gem install'
+alias gemup='gem update'
+alias gemun='gem uninstall'
+alias sgemi='sudo gem install'
+alias sgemup='sudo gem update'
+alias sgemun='sudo gem uninstall'
 
 # rails 3 (these override the corresponding aliases in the git plugin)
 alias rs='bundle show thin >/dev/null; if [ $? -eq 0 ]; then rails server thin; else rails server; fi'
