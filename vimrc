@@ -12,6 +12,9 @@
 " |   ,z = toggle spell check                                                 |
 " |   ,tp = toggle paste mode                                                 |
 " |                                                                           |
+" |   ,p = paste below and fix indentation                                    |
+" |   ,P = paste above and fix indentation                                    |
+" |                                                                           |
 " |   Y = yank to end of line                                                 |
 " |   Q = format text (gq)                                                    |
 " |                                                                           |
@@ -222,6 +225,10 @@ imap aa @
 
 map <leader>s :%s/\s\+$//<CR>    " removes trailing spaces
 nmap <leader>tp :set paste!<CR>  " toggle paste mode
+
+" Paste lines from unnamed register and fix indentation
+nmap <leader>p pV`]=
+nmap <leader>P PV`]=
 
 " Make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
