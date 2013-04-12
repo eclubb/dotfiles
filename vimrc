@@ -219,7 +219,7 @@ imap uu _
 imap hh =>
 imap aa @
 
-map ,s :%s/\s\+$//<CR>  " removes trailing spaces
+map <leader>s :%s/\s\+$//<CR>    " removes trailing spaces
 
 " Make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
@@ -274,7 +274,7 @@ set updatecount=0                 " disable swap files
 " Invisible Characters ********************************************************
 set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<
 set nolist
-:noremap ,i :set list!<CR>    " toggle invisible chars
+:noremap <leader>i :set list!<CR>    " toggle invisible chars
 
 
 " Spell Check *****************************************************************
