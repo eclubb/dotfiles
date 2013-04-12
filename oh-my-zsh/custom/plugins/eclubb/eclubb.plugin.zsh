@@ -106,6 +106,9 @@ compdef _git gsp=git-stash
 alias gsd='git stash drop'
 compdef _git gsd=git-stash
 
+alias gsb='git show-branch'
+compdef _git gsb=git-show-branch
+
 # gem
 alias sgi='sudo gem install'
 alias sgup='sudo gem update'
