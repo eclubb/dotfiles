@@ -11,9 +11,6 @@
 " |   ,i = toggle invisibles                                                  |
 " |   ,z = toggle spell check                                                 |
 " |                                                                           |
-" |   ,h = new horizontal window                                              |
-" |   ,v = new vertical window                                                |
-" |                                                                           |
 " |   Y = yank to end of line                                                 |
 " |   Q = format text (gq)                                                    |
 " |                                                                           |
@@ -84,10 +81,6 @@ set numberwidth=4
 " Windows *********************************************************************
 "set equalalways    " multiple windows, when created, are equal in size
 set splitbelow splitright
-
-" Vertical split then hop to new buffer
-:noremap ,v :vsp^M^W^W<cr>
-:noremap ,h :split^M^W^W<cr>
 
 
 " Cursor Highlights ***********************************************************
