@@ -24,7 +24,7 @@ Bundle 'wgibbs/vim-irblack'
 
 " Programming:
 "Bundle 'ervandew/supertab'
-"Bundle 'godlygeek/tabular'
+Bundle 'godlygeek/tabular'
 Bundle 'scrooloose/nerdcommenter'
 "Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-endwise'
