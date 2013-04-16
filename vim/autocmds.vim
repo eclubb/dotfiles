@@ -8,6 +8,9 @@ autocmd BufWritePost vimrc source $MYVIMRC
 " Jump to last cursor position when opening a file
 autocmd BufReadPost * call SetCursorPosition()
 
+" Jump to first line when writing a commit log entry
+au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
+
 " Recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
 
