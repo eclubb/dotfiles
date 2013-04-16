@@ -31,6 +31,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 "Bundle 'tpope/vim-unimpaired'
+"Bundle 'valloric/youcompleteme'
 
 " Ruby/Rails Programming:
 " #Bundle 'astashov/vim-ruby-debugger'
