@@ -45,30 +45,6 @@ source ~/.vim/functions.vim
 " Tabs ************************************************************************
 "set sta " a <Tab> in an indent inserts 'shiftwidth' spaces
 
-function! Tabstyle_tabs()
-  " Use 4-column tabs
-  set softtabstop=4
-  set shiftwidth=4
-  set tabstop=4
-  set noexpandtab
-endfunction
-
-function! Tabstyle_spaces()
-  " Use 2 spaces
-  set softtabstop=2
-  set shiftwidth=2
-  set tabstop=2
-  set expandtab
-endfunction
-
-function! Tabstyle_auto()
-  if (&ft == 'c') || (&ft == 'cpp') || (&ft == 'make') || (&ft == 'php') || (&ft == 'sh')
-    call Tabstyle_tabs()
-  else
-    call Tabstyle_spaces()
-  endif
-endfunction
-
 call Tabstyle_auto()
 
 
@@ -161,56 +137,9 @@ set laststatus=2
 " Recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
 
-" Return '[trailing_whitespace]' if trailing white space is detected
-" Return '' otherwise
-function! StatuslineTrailingSpaceWarning()
-    if !exists("b:statusline_trailing_space_warning")
-        if search('\s\+$', 'nw') != 0
-            let b:statusline_trailing_space_warning = '[trailing_whitespace]'
-        else
-            let b:statusline_trailing_space_warning = ''
-        endif
-    endif
-    return b:statusline_trailing_space_warning
-endfunction
-
-
-" Return the syntax highlight group under the cursor ''
-function! StatuslineCurrentHighlight()
-    let name = synIDattr(synID(line('.'),col('.'),1),'name')
-    if name == ''
-        return ''
-    else
-        return '[' . name . ']'
-    endif
-endfunction
 
 " Recalculate the tab warning flag when idle and after writing
 autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
-
-" Return '[&et]' if &et is set wrong
-" Return '[mixed-indenting]' if spaces and tabs are used to indent
-" Return an empty string if everything is fine
-function! StatuslineTabWarning()
-    if !exists("b:statusline_tab_warning")
-        let tabs = search('^\t', 'nw') != 0
-        let spaces = search('^ ', 'nw') != 0
-
-        " Don't do this for C files
-        if (&ft == 'c') || (&ft == 'cpp')
-            return ''
-        endif
-
-        if tabs && spaces
-            let b:statusline_tab_warning =  '[mixed-indenting]'
-        elseif (spaces && !&et) || (tabs && &et)
-            let b:statusline_tab_warning = '[&et]'
-        else
-            let b:statusline_tab_warning = ''
-        endif
-    endif
-    return b:statusline_tab_warning
-endfunction
 
 
 " Line Wrapping ***************************************************************
