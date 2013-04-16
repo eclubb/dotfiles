@@ -41,6 +41,9 @@ source ~/.vim/bindings.vim
 " Small custom functions.
 source ~/.vim/functions.vim
 
+" Auto commands.
+source ~/.vim/autocmds.vim
+
 
 " Tabs ************************************************************************
 "set sta " a <Tab> in an indent inserts 'shiftwidth' spaces
@@ -134,13 +137,6 @@ set statusline+=%l/%L    " cursor line/total lines
 set statusline+=\ %P     " percent through file
 set laststatus=2
 
-" Recalculate the trailing whitespace warning when idle, and after saving
-autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
-
-
-" Recalculate the tab warning flag when idle and after writing
-autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
-
 
 " Line Wrapping ***************************************************************
 set nowrap       " dont wrap lines
@@ -150,12 +146,6 @@ set linebreak    " wrap lines at convenient points
 " File Stuff ******************************************************************
 filetype plugin indent on
 
-"autocmd FileType html :set filetype=xhtml
-autocmd BufRead,BufNewFile *.md set filetype=markdown
-autocmd BufRead,BufNewFile *.h set filetype=c
-autocmd BufRead,BufNewFile Gemfile set filetype=ruby
-autocmd BufRead,BufNewFile Guardfile set filetype=ruby
-autocmd FileType * call Tabstyle_auto()
 
 " Insert New Line **************************************************************
 set formatoptions-=r    " don't continue comments when pushing enter
@@ -192,18 +182,6 @@ set ttymouse=xterm2
 "set selectmode=mouse
 
 
-" Omni Completion *************************************************************
-"autocmd FileType html :set omnifunc=htmlcomplete#CompleteTags
-"autocmd FileType python set omnifunc=pythoncomplete#Complete
-"autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-"autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-"autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-"autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-"autocmd FileType c set omnifunc=ccomplete#Complete
-" May require ruby compiled in
-"autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-
-
 " Code Folding *************************************************************
 set foldmethod=indent    " fold based on indent
 set foldnestmax=3        " deepest fold is 3 levels
@@ -214,10 +192,6 @@ set nofoldenable         " don't fold by default
 set wildmode=list:longest   "make cmdline tab completion similar to bash
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
-
-
-" Automatically reload .vimrc on save.
-autocmd BufWritePost vimrc source $MYVIMRC
 
 
 " -----------------------------------------------------------------------------
