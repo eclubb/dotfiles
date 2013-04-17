@@ -40,6 +40,9 @@ source ~/.vim/vundle.vim
 filetype plugin indent on
 
 
+let mapleader=','
+
+
 " Small custom functions.
 source ~/.vim/functions.vim
 
