@@ -126,4 +126,4 @@ alias sgemun='sudo gem uninstall'
 # rails 3 (these override the corresponding aliases in the git plugin)
 alias rs='bundle show thin >/dev/null; if [ $? -eq 0 ]; then rails server thin; else rails server; fi'
 alias rsd='rails server -p3001 --debugger'
-alias rc='pry -r ./config/environment || rails console'
+alias rc='bundle exec pry -r ./config/environment || rails console'
