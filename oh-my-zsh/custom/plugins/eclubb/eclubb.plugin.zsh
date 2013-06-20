@@ -64,6 +64,8 @@ alias gld='git log --pretty=decorate'
 compdef _git gld=git-log
 alias glp='gl -p'
 compdef _git glp=git-log
+alias glg='gl --graph'
+compdef _git glg=git-log
 alias gls='gl --stat'
 compdef _git gls=git-log
 alias gcount='git shortlog -sn'
