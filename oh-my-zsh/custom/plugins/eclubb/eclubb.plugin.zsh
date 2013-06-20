@@ -62,6 +62,8 @@ alias gl='git log --pretty=normal'
 compdef _git gl=git-log
 alias gld='git log --pretty=decorate'
 compdef _git gld=git-log
+alias glf='git log --pretty=full'
+compdef _git glf=git-log
 alias glp='gl -p'
 compdef _git glp=git-log
 alias glg='gl --graph'
