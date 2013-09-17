@@ -119,6 +119,9 @@ compdef _git gsd=git-stash
 alias gsb='git -p show-branch'
 compdef _git gsb=git-show-branch
 
+alias gsu='git submodule update --init --recursive'
+compdef _git gsu=git-submodule
+
 # gem
 alias gemi='gem install'
 alias gemup='gem update'
