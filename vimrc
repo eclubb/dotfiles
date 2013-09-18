@@ -10,6 +10,7 @@
 " |   ,s = strip trailing whitespace                                          |
 " |   ,i = toggle invisibles                                                  |
 " |   ,z = toggle spell check                                                 |
+" |   ,z= = quick spelling fix (first item in z= list)                        |
 " |   ,tp = toggle paste mode                                                 |
 " |                                                                           |
 " |   ,p = paste below and fix indentation                                    |
