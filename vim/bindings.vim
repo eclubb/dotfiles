@@ -16,6 +16,9 @@ nmap <silent> <leader>tp :set paste!<CR>
 " Toggle spell check
 nmap <silent> <leader>z :set spell!<CR>
 
+" Start a search and replace for current word
+map <Leader>rw :%s/\<<C-r><C-w>\>/
+
 " Paste lines from unnamed register and fix indentation
 nmap <leader>p pV`]=
 nmap <leader>P PV`]=

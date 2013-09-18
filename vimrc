@@ -12,6 +12,7 @@
 " |   ,z = toggle spell check                                                 |
 " |   ,z= = quick spelling fix (first item in z= list)                        |
 " |   ,tp = toggle paste mode                                                 |
+" |   ,rw = Start a search and replace for current word                       |
 " |                                                                           |
 " |   ,p = paste below and fix indentation                                    |
 " |   ,P = paste above and fix indentation                                    |
