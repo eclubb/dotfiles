@@ -41,7 +41,7 @@ Bundle 'tpope/vim-surround'
 " Bundle 'jgdavey/vim-blockle'
 " Bundle 'tpope/vim-cucumber'
 " Bundle 'tpope/vim-haml'
-" Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rails'
 " Bundle 'tpope/vim-rake'
 " Bundle 'vim-ruby/vim-ruby'
 
