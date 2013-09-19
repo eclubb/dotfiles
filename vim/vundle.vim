@@ -16,6 +16,7 @@ Bundle 'gmarik/vundle'
 " -----------------------------------------------------------------------------
 
 " Generally Useful:
+Bundle 'jgdavey/tslime.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-abolish'
 Bundle 'vim-scripts/camelcasemotion'
@@ -39,6 +40,7 @@ Bundle 'tpope/vim-surround'
 " #Bundle 'ecomba/vim-ruby-refactoring'
 " #Bundle 'janx/vim-rubytest'
 " Bundle 'jgdavey/vim-blockle'
+Bundle 'jgdavey/vim-turbux'
 " Bundle 'tpope/vim-cucumber'
 " Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'

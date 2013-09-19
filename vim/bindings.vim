@@ -43,3 +43,7 @@ map <down> gj
 map j gj
 imap <down> <C-o>gj
 map E ge
+
+" Run all specs/features
+map <Leader>ras :call Send_to_Tmux("rspec spec\n")<CR>
+map <Leader>raf :call Send_to_Tmux("cucumber features\n")<CR>

@@ -17,6 +17,11 @@
 " |   ,p = paste below and fix indentation                                    |
 " |   ,P = paste above and fix indentation                                    |
 " |                                                                           |
+" |   ,t = run current spec/feature file                                      |
+" |   ,T = run nearest spec/feature                                           |
+" |   ,ras = run all specs                                                    |
+" |   ,raf = run all features                                                 |
+" |                                                                           |
 " |   Y = yank to end of line                                                 |
 " |   Q = format text (gq)                                                    |
 " |                                                                           |
