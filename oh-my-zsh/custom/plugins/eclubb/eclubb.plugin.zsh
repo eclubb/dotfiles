@@ -8,6 +8,14 @@ cdiff() {
 }
 
 
+# Compare changesets across git branches.
+# gcs: git cherry show
+gcs() {
+  git cherry -v $* | grep '^\+' | less
+}
+compdef _git gcs=git-cherry
+
+
 # autocorrect is more annoying than helpful
 unsetopt correct_all
 
