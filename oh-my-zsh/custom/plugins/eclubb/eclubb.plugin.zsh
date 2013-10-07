@@ -1,3 +1,12 @@
+# Use gvim (if available) in console mode. This gives Vim access to the system clipboards.
+vim() {
+  if $(type gvim >/dev/null 2>&1) ; then
+    gvim -v $*
+  else
+    vim $*
+  fi
+}
+
 # Less options
 LESS=-FRX
 
