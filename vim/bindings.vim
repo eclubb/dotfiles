@@ -24,7 +24,7 @@ nmap <leader>p pV`]=
 nmap <leader>P PV`]=
 
 nnoremap gf <C-W>gf
-noremap Q gq     " map Q to something useful
+noremap Q gq     " reformat selected text
 nnoremap Y y$    " make Y consistent with C and D
 
 " Make <c-l> clear the highlight as well as redraw
