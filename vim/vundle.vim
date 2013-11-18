@@ -31,7 +31,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
-"Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-unimpaired'
 "Bundle 'valloric/youcompleteme'
 "Bundle 'sirver/ultisnips'
 
