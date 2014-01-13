@@ -1,9 +1,9 @@
 # Use gvim (if available) in console mode. This gives Vim access to the system clipboards.
 vim() {
   if $(type gvim >/dev/null 2>&1) ; then
-    gvim -v $*
+    /usr/bin/gvim -v $*
   else
-    vim $*
+    /usr/bin/vim $*
   fi
 }
 
