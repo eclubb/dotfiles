@@ -5,7 +5,7 @@ ZSH_THEME="eclubb"
 DISABLE_AUTO_UPDATE="true"
 CASE_SENSITIVE="true"
 
-plugins=(bundler gem rails3 yum eclubb)
+plugins=(bundler gem rails yum eclubb)
 
 source $ZSH/oh-my-zsh.sh
 
