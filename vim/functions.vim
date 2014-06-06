@@ -136,7 +136,16 @@ function! Tabstyle_tabs()
 endfunction
 
 
-function! Tabstyle_spaces()
+function! Tabstyle_4_spaces()
+  " Use 2 spaces
+  set softtabstop=4
+  set shiftwidth=4
+  set tabstop=4
+  set expandtab
+endfunction
+
+
+function! Tabstyle_2_spaces()
   " Use 2 spaces
   set softtabstop=2
   set shiftwidth=2
@@ -146,9 +155,11 @@ endfunction
 
 
 function! Tabstyle_auto()
-  if (&ft == 'c') || (&ft == 'cpp') || (&ft == 'make') || (&ft == 'php') || (&ft == 'sh')
+  if (&ft == 'c') || (&ft == 'cpp') || (&ft == 'make') || (&ft == 'sh')
     call Tabstyle_tabs()
+  elseif (&ft == 'php') || (&ft == 'javascript')
+    call Tabstyle_4_spaces()
   else
-    call Tabstyle_spaces()
+    call Tabstyle_2_spaces()
   endif
 endfunction
