@@ -49,7 +49,7 @@ Bundle 'tpope/vim-rails'
 " Bundle 'vim-ruby/vim-ruby'
 
 " Filetype/Syntax/Intendation:
-" Bundle 'pangloss/vim-javascript'
+Bundle 'pangloss/vim-javascript'
 " Bundle 'tpope/vim-git'
 " Bundle 'vim-scripts/jQuery'
 Bundle 'kchmck/vim-coffee-script'
