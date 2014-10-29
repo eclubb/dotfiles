@@ -155,7 +155,7 @@ endfunction
 
 
 function! Tabstyle_auto()
-  if (&ft == 'c') || (&ft == 'cpp') || (&ft == 'make') || (&ft == 'sh')
+  if (&ft == 'c') || (&ft == 'cpp') || (&ft == 'make') || (&ft == 'sh') || (&ft == 'awk')
     call Tabstyle_tabs()
   elseif (&ft == 'php') || (&ft == 'javascript')
     call Tabstyle_4_spaces()
