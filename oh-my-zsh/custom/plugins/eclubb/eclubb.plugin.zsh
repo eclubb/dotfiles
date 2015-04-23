@@ -40,7 +40,7 @@ alias retag='ctags -R --exclude=.svn --exclude=.git --exclude=log *'
 
 # yum
 alias syi='sudo yum install'
-alias syup='sudo yum update'
+alias syup='sudo yum update --skip-broken --nogpgcheck'
 alias syun='sudo yum erase'
 
 # ls
