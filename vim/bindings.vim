@@ -47,3 +47,9 @@ map E ge
 " Run all specs/features
 map <Leader>ras :call Send_to_Tmux("rspec spec\n")<CR>
 map <Leader>raf :call Send_to_Tmux("cucumber features\n")<CR>
+
+" Arduino
+map <Leader>ac :w \| :call Send_to_Tmux("make build\n")<CR>
+map <Leader>ad :w \| :call Send_to_Tmux("make deploy\n")<CR>
+map <Leader>au :w \| :call Send_to_Tmux("make upload\n")<CR>
+map <Leader>am :w \| :call Send_to_Tmux("make monitor\n")<CR>

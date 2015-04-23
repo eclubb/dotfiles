@@ -34,6 +34,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 "Bundle 'valloric/youcompleteme'
 "Bundle 'sirver/ultisnips'
+" Bundle 'jplaut/vim-arduino-ino'
+Bundle 'sudar/vim-arduino-syntax'
 
 " Ruby/Rails Programming:
 " #Bundle 'astashov/vim-ruby-debugger'
