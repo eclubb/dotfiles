@@ -33,7 +33,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 "Bundle 'valloric/youcompleteme'
-"Bundle 'sirver/ultisnips'
+Bundle 'sirver/ultisnips'
 " Bundle 'jplaut/vim-arduino-ino'
 Bundle 'sudar/vim-arduino-syntax'
 

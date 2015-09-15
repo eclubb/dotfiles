@@ -148,3 +148,7 @@ set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 
 " Nerd Commenter *************************************************************
 let NERDSpaceDelims=1 " insert a space after/before opening/closing delimeter
+
+
+" UltiSnips ******************************************************************
+let g:UltiSnipsEditSplit='horizontal'
