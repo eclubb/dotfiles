@@ -23,6 +23,7 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.h set filetype=c
 autocmd BufRead,BufNewFile Gemfile set filetype=ruby
 autocmd BufRead,BufNewFile Guardfile set filetype=ruby
+autocmd BufRead,BufNewFile Bowerfile set filetype=ruby
 autocmd BufRead,BufNewFile *.ino,*.pde set filetype=arduino
 autocmd FileType * call Tabstyle_auto()
 
