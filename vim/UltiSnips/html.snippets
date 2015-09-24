@@ -11,19 +11,19 @@ endsnippet
 #############
 # HTML Tags #
 #############
-snippet tag "Generic HTML tag" w
+snippet t "Generic HTML tag" w
 <${1:div}>
 	${0:${VISUAL}}
 </${1/(\w+).*/$1/}>
 endsnippet
 
-snippet tag. "Generic HTML tag  with class" w
+snippet t. "Generic HTML tag with class" w
 <${1:div}`!p snip.rv=' class="' if t[2] else ""`${2:name}`!p snip.rv = '"' if t[2] else ""`>
 	${0:${VISUAL}}
 </${1/(\w+).*/$1/}>
 endsnippet
 
-snippet tag# "Generic HTML tag with ID & class" w
+snippet t# "Generic HTML tag with ID & class" w
 <${1:div}`!p snip.rv=' id="' if t[2] else ""`${2:name}`!p snip.rv = '"' if t[2] else ""``!p snip.rv=' class="' if t[3] else ""`${3:name}`!p snip.rv = '"' if t[3] else ""`>
 	${0:${VISUAL}}
 </${1/(\w+).*/$1/}>
