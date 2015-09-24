@@ -12,7 +12,7 @@ snippet template "Full HTML file template" b
 	<head>
 		<meta charset="utf-8">
 		<title>${1:`!p snip.rv = snip.basename or "Page Title"`}</title>
-		<link rel="stylesheet" href="$2" media="${3:all}">
+		<link href="$2" rel="stylesheet" media="${3:all}">
 		<script src="$4"></script>
 	</head>
 
