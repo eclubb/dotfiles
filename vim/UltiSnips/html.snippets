@@ -1,11 +1,25 @@
 priority -50
 
-############
-# Doctypes #
-############
 snippet doctype "HTML - 5.0 (doctype)" b
 <!DOCTYPE html>
 
+endsnippet
+
+snippet template "Full HTML file template" b
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>${1:`!p snip.rv = snip.basename or "Page Title"`}</title>
+		<link rel="stylesheet" href="$2" media="${3:all}">
+		<script src="$4"></script>
+	</head>
+
+	<body>
+		$0
+	</body>
+</html>
 endsnippet
 
 #############
