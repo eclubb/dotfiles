@@ -12,13 +12,13 @@ snippet template "Full HTML file template" b
 	<head>
 		<meta charset="utf-8">
 		<title>${1:`!p snip.rv = snip.basename or "Page Title"`}</title>
-		<link href="$2" rel="stylesheet" media="${3:all}">
+		<link href="${2:css/main.css}" rel="stylesheet" media="${3:all}">
 	</head>
 
 	<body>
 		$0
 
-		<script src="$4"></script>
+		<script src="${4:js/main.js}"></script>
 	</body>
 </html>
 endsnippet
