@@ -43,6 +43,11 @@ alias syi='sudo yum install'
 alias syup='sudo yum update --skip-broken --nogpgcheck'
 alias syun='sudo yum erase'
 
+# dnf (yum successor)
+alias sdi='sudo dnf install'
+alias sdup='sudo dnf upgrade --nogpgcheck'
+alias sdun='sudo dnf remove'
+
 # ls
 alias l='ls -lAh --color=auto'
 alias ll='ls -lh --color=auto'
