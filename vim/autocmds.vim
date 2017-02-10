@@ -26,6 +26,7 @@ autocmd BufRead,BufNewFile Guardfile set filetype=ruby
 autocmd BufRead,BufNewFile Bowerfile set filetype=ruby
 autocmd BufRead,BufNewFile *.ino,*.pde set filetype=arduino
 autocmd BufRead,BufNewFile *_spec.js UltiSnipsAddFiletypes javascript-jasmine.javascript
+autocmd BufRead,BufNewFile *.zsh-theme set filetype=zsh
 autocmd FileType * call Tabstyle_auto()
 
 
