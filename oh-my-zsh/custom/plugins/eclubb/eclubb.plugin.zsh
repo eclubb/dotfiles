@@ -17,6 +17,12 @@ cdiff() {
 }
 
 
+# Colorized, paginated, diff. Accepts same args as normal diff.
+tree() {
+  command tree -aC $* | less
+}
+
+
 # Compare changesets across git branches.
 # gcs: git cherry show
 gcs() {
