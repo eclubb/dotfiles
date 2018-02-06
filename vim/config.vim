@@ -3,14 +3,17 @@
 " -----------------------------------------------------------------------------
 
 " Colors **********************************************************************
-if (&term !~ '^linux$')
-  set t_Co=256    " 256 colors
-endif
+" if (&term !~ '^linux$')
+  " set t_Co=256    " 256 colors
+" endif
 
 set background=dark
 syntax on       " syntax highlighting
 
-colorscheme ir_black
+set t_Co=256    " 256 colors
+let g:solarized_termcolors=256
+colorscheme solarized
+" colorscheme ir_black
 
 
 " Tabs ************************************************************************

@@ -22,6 +22,7 @@ Bundle 'tpope/vim-abolish'
 Bundle 'vim-scripts/camelcasemotion'
 Bundle 'vim-scripts/IndexedSearch'
 Bundle 'wgibbs/vim-irblack'
+Bundle 'altercation/vim-colors-solarized'
 
 " Programming:
 "Bundle 'ervandew/supertab'
