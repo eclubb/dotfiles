@@ -16,6 +16,9 @@ cdiff() {
   colordiff -u -p $* | less
 }
 
+lsp() {
+  ls $* | less
+}
 
 # Colorized, paginated, diff. Accepts same args as normal diff.
 tree() {
@@ -55,9 +58,9 @@ alias sdup='sudo dnf upgrade --nogpgcheck'
 alias sdun='sudo dnf remove'
 
 # ls
-alias l='ls -lAh --color=auto'
-alias ll='ls -lh --color=auto'
-alias la='ls -A --color=auto'
+alias l='lsp -lAh --color=always'
+alias ll='lsp -lh --color=always'
+alias la='lsp -A --color=always'
 
 # git
 alias ga='git add'
