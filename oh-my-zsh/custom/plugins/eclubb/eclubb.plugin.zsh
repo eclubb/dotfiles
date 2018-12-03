@@ -90,6 +90,9 @@ compdef _git gd=git-diff
 alias gdc='git diff --cached'
 compdef _git gdc=git-diff
 
+alias gfp='git fetch --prune'
+compdef _git gfp=git-fetch
+
 alias gl='git log --pretty=normal'
 compdef _git gl=git-log
 alias gld='git log --pretty=decorate'
