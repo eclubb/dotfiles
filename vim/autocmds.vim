@@ -28,6 +28,8 @@ autocmd BufRead,BufNewFile *.ino,*.pde set filetype=arduino
 autocmd BufRead,BufNewFile *_spec.js UltiSnipsAddFiletypes javascript-jasmine.javascript
 autocmd BufRead,BufNewFile *.zsh-theme set filetype=zsh
 autocmd FileType * call Tabstyle_auto()
+autocmd FileType gitcommit setlocal spell
+autocmd FileType markdown setlocal spell
 
 
 " Omni Completion *************************************************************
