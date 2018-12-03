@@ -54,7 +54,8 @@ alias syun='sudo yum erase'
 
 # dnf (yum successor)
 alias sdi='sudo dnf install'
-alias sdup='sudo dnf upgrade --nogpgcheck'
+alias sdup='sudo dnf upgrade --nogpgcheck --best --allowerasing'
+alias sdupr='sudo dnf upgrade --nogpgcheck --best --allowerasing --refresh'
 alias sdun='sudo dnf remove'
 
 # ls
