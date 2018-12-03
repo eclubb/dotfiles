@@ -44,6 +44,9 @@ map j gj
 imap <down> <C-o>gj
 map E ge
 
+" Save and run current file
+map <Leader>r :w \| :call Send_to_Tmux("./" . expand('%') . "\n")<CR>
+
 " Run all specs/features
 map <Leader>ras :call Send_to_Tmux("rspec spec\n")<CR>
 map <Leader>raf :call Send_to_Tmux("cucumber features\n")<CR>
