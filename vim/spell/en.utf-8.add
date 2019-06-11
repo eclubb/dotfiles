@@ -53,3 +53,17 @@ Setuptool
 netmask
 triggerable
 requester's
+VE6023
+LDAP
+checkbox
+dropdown
+multiselect
+hostname
+filename
+#enerated
+#enerated
+#enerated
+#enerated
+generated
+ntpd
+selectable
